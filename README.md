@@ -111,7 +111,7 @@ There is some factors that you need to consider when choosing the right region f
 9. Enter the two MFA codes that appear in the virtual MFA app.
 10. Choose **Assign MFA**.
 
-![MFA](img/aws-security.png)
+![MFA](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/aws-security.png)
 #### What is a Root User
 The root user is the AWS account owner. When you first create an AWS account, you begin with a single sign-in identity that has complete access to all AWS services and resources in the account. This identity is called the AWS account root user and is accessed by signing in with the email address and password that you used to create the account. We strongly recommend that you do not use the root user for your everyday tasks, even the administrative ones. Instead, adhere to the best practice of using the root user only to create your first IAM user. Then securely lock away the root user credentials and use them to perform only a few account and service management tasks.
 
@@ -153,35 +153,35 @@ An IAM policy is a document that formally states one or more permissions. IAM po
 ### Creating a new IAM user
 1. Open the [IAM console](https://console.aws.amazon.com/iam/home?#/home). Search for IAM in the Services search box.
 2. Choose **Users**.
-![IAM User Step one](img/newUser-step0.png)
+![IAM User Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step0.png)
 3. Choose **I want to create an IAM user**.
 4. Enter a user name and a custom password.
-![IAM User Step one](img/newUser-step1.png)
+![IAM User Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step1.png)
 5. Choose **Attach policies directly** and select Administrator Access.
-![IAM User Step two](img/newUser-step2.png)
+![IAM User Step two](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step2.png)
 6. Click **Create user**.
-![IAM User Step three](img/newUser-step3.png)
+![IAM User Step three](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step3.png)
 7. Click **Download .csv** to download the user credentials, use this credentials to login to the AWS Management Console or go to the url https://**<account_id>**.signin.aws.amazon.com/console/ and use the credentials to login.
-![IAM User Step four](img/newUser-step4.png)
+![IAM User Step four](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step4.png)
 8. Sign in to the AWS Management Console using the new user credentials.
-![IAM User Step five](img/newUser-step5.png)
+![IAM User Step five](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step5.png)
 
 ### Creating a new Role
 1. Again use the Services search box to find and choose **IAM**.
-![IAM Role Step one](img/newRole1.png)
+![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole1.png)
 2. Create a **new role**
-![IAM Role Step one](img/newRole2.png)
+![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole2.png)
 3. Select **AWS service** and EC2
-![IAM Role Step one](img/newRole3.png)
+![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole3.png)
 4. Search for **amazons3full** and select AmazonS3FullAccess
 5. Search for **amazondynamodb** and select AmazonDynamoDBFullAccess
-![IAM Role Step one](img/newRole5.png)
+![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole5.png)
 6. Enter a name for the role and click **Create role**
-![IAM Role Step one](img/newRole6.png)
+![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole6.png)
 7. We can see the new role created
-![IAM Role Step one](img/newRole7.png)
+![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole7.png)
 
-![IAM Policy structure](img/policy-structure.png)
+![IAM Policy structure](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/policy-structure.png)
 
 ### Virtual Private Cloud (VPC)
 #### What is a VPC
@@ -218,13 +218,13 @@ An Amazon Machine Image (AMI) provides the information required to launch an ins
 - **Storage optimized:** Are designed for workloads that require high, sequential read and write access to very large data sets on local storage.
 
 #### Creating an EC2 instance and lunching a application
-![EC2 Step one](img/ec2-1.png)
-![EC2 Step two](img/ec2-2.png)
-![EC2 Step three](img/ec2-3.png)
-![EC2 Step four](img/ec2-4.png)
-![EC2 Step five](img/ec2-5.png)
-![EC2 Step six](img/ec2-6.png)
-![EC2 Step seven](img/ec2-7.png)
+![EC2 Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-1.png)
+![EC2 Step two](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-2.png)
+![EC2 Step three](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-3.png)
+![EC2 Step four](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-4.png)
+![EC2 Step five](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-5.png)
+![EC2 Step six](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-6.png)
+![EC2 Step seven](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-7.png)
 Add the following code to the **User data** section and change the Region
 ```bash
 #!/bin/bash -ex
@@ -239,12 +239,12 @@ export AWS_DEFAULT_REGION=<INSERT REGION HERE>
 export DYNAMO_MODE=on
 FLASK_APP=application.py /usr/local/bin/flask run --host=0.0.0.0 --port=80
 ```
-![EC2 Step eight](img/ec2-8.png)
+![EC2 Step eight](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-8.png)
 
 Successful application deployment, you can see the application running by clicking on the **instance id** link
 
-![EC2 Step nine](img/ec2-9.png)
-![EC2 Step ten](img/ec2-10.png)
+![EC2 Step nine](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-9.png)
+![EC2 Step ten](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-1.png)
 
 ## Databases on AWS
 ### RDBMS
@@ -256,8 +256,8 @@ There are three types of Amazon RDS DB instances: **Standard, Memory Optimized, 
 
 ### Amazon DynamoDB
 Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale and it  It's a fully managed, multiregion, multimaster, durable database with built-in security, backup and restore, and in-memory caching for internet-scale applications. DynamoDB can handle more than 10 trillion requests per day and can support peaks of more than 20 million requests per second.
-![DynamoDB](img/week3database.png)
-![DynamoDB](img/week3database02.png)
+![DynamoDB](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/week3database.png)
+![DynamoDB](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/week3database02.png)
 
 ### Amazon Neptune
 Amazon Neptune is a fast, reliable, fully managed graph database service that makes it easy to build and run applications that work with highly connected datasets. The core of Amazon Neptune is a purpose-built, high-performance graph database engine optimized for storing billions of relationships and querying the graph with milliseconds latency. Amazon Neptune supports popular graph models Property Graph and W3C's RDF, and their respective query languages Apache TinkerPop Gremlin and SPARQL, allowing you to easily build queries that efficiently navigate highly connected datasets. Neptune powers graph use cases such as recommendation engines, fraud detection, knowledge graphs, drug discovery, and network security.
@@ -272,6 +272,20 @@ Amazon Aurora is a MySQL and PostgreSQL-compatible relational database built for
 We don't want to lose our data, so we need to backup our database, there are two types of backups:
 - **Automated backups:** Are enabled by default. Amazon RDS creates a storage volume snapshot of your DB instance, backing up the entire DB instance and not just individual databases. Automated backups are deleted automatically when you delete the DB instance.
 - **Database snapshots:** Are user-initiated and enable you to back up your DB instance in a known state as frequently as you wish, and then restore to that specific state at any time. Unlike automated backups, you can retain a database snapshot even after you delete the DB instance.
+
+### Choosing the right database
+Different databases are designed for different use cases. The following table summarizes the different database types and their use cases.
+
+| Database Type | Use Cases                                                                                      | AWS Service                                                    |
+| ------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Relational    | Traditional applications, ERP, CRM, e-commerce                                                 | Amazon RDS, Amazon Aurora, Amazon Redshift                     |
+| Key-value     | High-traffic web apps, e-commerce systems, gaming applications                                 | Amazon DynamoDB                                                |
+| In-memory     | Caching, session management, gaming leaderboards, geospatial applications                      | Amazon ElastiCache for Memcached, Amazon ElastiCache for Redis |
+| Document      | Content management, catalogs, user profiles                                                    | Amazon DocumentDB (with MongoDB compatibility)                 |
+| Wide column   | High-scale industrial apps for equipment maintenance, fleet management, and route optimization | Amazon Keyspaces (for Apache Cassandra)                        |
+| Graph         | Fraud detection, social networking, recommendation engines                                     | Amazon Neptune                                                 |
+| Time series   | IoT applications, DevOps, industrial telemetry                                                 | Amazon Timestream                                              |
+| Ledger        | Systems of record, supply chain, registrations, banking transactions                           | Amazon QLDB                                                    |
 
 ## Ramdom Notes
 - **Comand Line Interface (CLI)** Is a tool that allows you to interact with AWS services using commands in your command-line shell.
