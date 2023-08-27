@@ -153,7 +153,7 @@ An IAM policy is a document that formally states one or more permissions. IAM po
 ### Creating a new IAM user
 1. Open the [IAM console](https://console.aws.amazon.com/iam/home?#/home). Search for IAM in the Services search box.
 2. Choose **Users**.
-![IAM User Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step0.png)
+![IAM User Step cero](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step0.png)
 3. Choose **I want to create an IAM user**.
 4. Enter a user name and a custom password.
 ![IAM User Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step1.png)
@@ -218,13 +218,13 @@ An Amazon Machine Image (AMI) provides the information required to launch an ins
 - **Storage optimized:** Are designed for workloads that require high, sequential read and write access to very large data sets on local storage.
 
 #### Creating an EC2 instance and lunching a application
-![EC2 Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-1.png)
-![EC2 Step two](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-2.png)
-![EC2 Step three](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-3.png)
-![EC2 Step four](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-4.png)
-![EC2 Step five](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-5.png)
-![EC2 Step six](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-6.png)
-![EC2 Step seven](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-7.png)
+![EC2 Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-1.png)
+![EC2 Step two](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-2.png)
+![EC2 Step three](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-3.png)
+![EC2 Step four](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-4.png)
+![EC2 Step five](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-5.png)
+![EC2 Step six](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-6.png)
+![EC2 Step seven](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-7.png)
 Add the following code to the **User data** section and change the Region
 ```bash
 #!/bin/bash -ex
@@ -239,12 +239,12 @@ export AWS_DEFAULT_REGION=<INSERT REGION HERE>
 export DYNAMO_MODE=on
 FLASK_APP=application.py /usr/local/bin/flask run --host=0.0.0.0 --port=80
 ```
-![EC2 Step eight](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-8.png)
+![EC2 Step eight](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-8.png)
 
 Successful application deployment, you can see the application running by clicking on the **instance id** link
 
-![EC2 Step nine](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/ec2-9.png)
-![EC2 Step ten](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-1.png)
+![EC2 Step nine](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-9.png)
+![EC2 Step ten](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-10.png)
 
 ## Databases on AWS
 ### RDBMS
