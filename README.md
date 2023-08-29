@@ -1,7 +1,7 @@
 # AWS Cloud Solutions Architect
 
 ## Description
-This repository contains my personal notes and code for the AWS Cloud Solutions Architect Professional Certificate, I'm hopping to use this repository as a way to keep track of my progress and if in the future a need to remember something this repository will be a good place to start.  
+This repository contains my personal notes and code for the AWS Cloud Solutions Architect Professional Certificate, I'm hopping to use this repository as a way to keep track of my progress and if in the future I need to remember something this repository will be a good place to start.  
 ### What is the Cloud
 The cloud is a set of services and technologies that enable the delivery of computing services over the internet in real time, while offering flexibility, scalability, and a pay-per-use pricing model.
 ### Cloud Computing Characteristics
@@ -246,6 +246,45 @@ Successful application deployment, you can see the application running by clicki
 ![EC2 Step nine](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-9.png)
 ![EC2 Step ten](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-10.png)
 
+### Amazon EC2 Instance Storage
+EC2 Instance Storage is a temporary block-level storage volume that is physically attached to the host computer for an EC2 instance. Instance storage is ideal for temporary storage of information that changes frequently, such as buffers, caches, scratch data, and other temporary content, or for data that is replicated across a fleet of instances, such as a load-balanced pool of web servers.
+
+### Elastic Block Store (EBS)
+Amazon Elastic Block Store (Amazon EBS) provides persistent block storage volumes for use with Amazon EC2 instances in the AWS Cloud. Each Amazon EBS volume is automatically replicated within its Availability Zone to protect you from component failure, is meant for data that changes frequently and persist through instance stops, terminations, or hardware failures, offering high availability and durability. Amazon EBS volumes offer the consistent and low-latency performance needed to run your workloads. With Amazon EBS, you can scale your usage up or down within minutes—all while paying a low price for only what you provision.
+## Inportant features of EBS
+- Performance depends on IOPS (input/output operations per second).
+- Ideal for transactional workloads such as databases and boot volumes.
+- HDD-backed volumes have the following characteristics: 
+- Performance depends on MB/s.
+- Ideal for throughput-intensive workloads, such as big data, data warehouses, log processing, and sequential data I/O.
+- Here are a few important features of Amazon EBS that you need to know when comparing it to other services. 
+- It is block storage.
+- You pay for what you provision (you have to provision storage in advance).
+- EBS volumes are replicated across multiple servers in a single Availability Zone.
+- Most EBS volumes can only be attached to a single EC2 instance at a time.
+
+
+### Amazon Elastic File System (EFS)
+Amazon Elastic File System (Amazon EFS) provides a simple, scalable, fully managed elastic NFS file system for use with AWS Cloud services and on-premises resources. It is built to scale on demand to petabytes without disrupting applications, growing and shrinking automatically as you add and remove files, eliminating the need to provision and manage capacity to accommodate growth.
+## Inportant features of EFS and FSx
+- It is file storage.
+- You pay for what you use (you don’t have to provision storage in advance).
+- Amazon EFS and Amazon FSx can be mounted onto multiple EC2 instances.
+
+### Amazon Simple Storage Service (S3)
+Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. This means customers of all sizes and industries can use it to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics. Amazon S3 provides easy-to-use management features so you can organize your data and configure finely-tuned access controls to meet your specific business, organizational, and compliance requirements. Amazon S3 is designed for 99.999999999% (11 9's) of durability, and stores data for millions of applications for companies all around the world.
+## Inportant features of S3
+- It is object storage.
+- You pay for what you use (you don’t have to provision storage in advance).
+- Amazon S3 replicates your objects across multiple Availability Zones in a Region.
+- Amazon S3 is not storage attached to compute.
+
+### Amazon Glacier
+Amazon Glacier is a secure, durable, and extremely low-cost cloud storage service for data archiving and long-term backup. Customers can reliably store large or small amounts of data for as little as $0.004 per gigabyte per month, a significant savings compared to on-premises solutions. To keep costs low yet suitable for varying retrieval needs, Amazon Glacier provides three options for access to archives, from a few minutes to several hours. All data is secured using encryption, and access to the data is controlled by using AWS Identity and Access Management (IAM) policies. Also, you can optionally configure Vault Lock to enforce compliance controls for your Amazon Glacier vaults and archives. Amazon Glacier is a great storage choice when low storage cost is paramount and your data is rarely retrieved. If your application requires fast or frequent access to your data, consider using Amazon S3. For more information, see Amazon S3.
+
+### Amazon Snowball
+AWS Snowball is a petabyte-scale data transport service that uses secure devices to transfer large amounts of data into and out of the AWS Cloud. Snowball addresses challenges like high network costs, long transfer times, and security concerns to migrate data as efficiently as possible. Transferring data with Snowball is simple, fast, secure, and can be as little as one-fifth the cost of high-speed Internet.
+
 ## Databases on AWS
 ### RDBMS
 A relational database management system (RDBMS) is a collection of programs and capabilities that enable IT teams and others to create, update, administer and otherwise interact with a relational database. Most commercial RDBMSes use Structured Query Language (SQL) to access the database, although SQL was invented after the initial development of the relational model and is not necessary for its use.
@@ -321,6 +360,7 @@ Different databases are designed for different use cases. The following table su
 - **CRM** Customer relationship management (CRM) is a technology for managing all your company's relationships and interactions with customers and potential customers.
 - **ACID** In computer science, ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps.
 - **ACLs** Access control lists (ACLs) are a collection of permissions that apply to a file or directory.
+- **Ephemeral Storage** Is temporary storage that is available only during the lifetime of the instance that provides it.
 
 
 Working on my AWS Cloud Solutions Architect Professional Certificate
