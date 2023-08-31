@@ -111,7 +111,7 @@ There is some factors that you need to consider when choosing the right region f
 9. Enter the two MFA codes that appear in the virtual MFA app.
 10. Choose **Assign MFA**.
 
-![MFA](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/aws-security.png)
+![MFA](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/aws-security.png?raw=true)
 #### What is a Root User
 The root user is the AWS account owner. When you first create an AWS account, you begin with a single sign-in identity that has complete access to all AWS services and resources in the account. This identity is called the AWS account root user and is accessed by signing in with the email address and password that you used to create the account. We strongly recommend that you do not use the root user for your everyday tasks, even the administrative ones. Instead, adhere to the best practice of using the root user only to create your first IAM user. Then securely lock away the root user credentials and use them to perform only a few account and service management tasks.
 
@@ -153,35 +153,35 @@ An IAM policy is a document that formally states one or more permissions. IAM po
 ### Creating a new IAM user
 1. Open the [IAM console](https://console.aws.amazon.com/iam/home?#/home). Search for IAM in the Services search box.
 2. Choose **Users**.
-![IAM User Step cero](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step0.png)
+![IAM User Step cero](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step0.png?raw=true)
 3. Choose **I want to create an IAM user**.
 4. Enter a user name and a custom password.
-![IAM User Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step1.png)
+![IAM User Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step1.png?raw=true)
 5. Choose **Attach policies directly** and select Administrator Access.
-![IAM User Step two](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step2.png)
+![IAM User Step two](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step2.png?raw=true)
 6. Click **Create user**.
-![IAM User Step three](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step3.png)
+![IAM User Step three](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step3.png?raw=true)
 7. Click **Download .csv** to download the user credentials, use this credentials to login to the AWS Management Console or go to the url https://**<account_id>**.signin.aws.amazon.com/console/ and use the credentials to login.
-![IAM User Step four](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step4.png)
+![IAM User Step four](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step4.png?raw=true)
 8. Sign in to the AWS Management Console using the new user credentials.
-![IAM User Step five](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step5.png)
+![IAM User Step five](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newUser-step5.png?raw=true)
 
 ### Creating a new Role
 1. Again use the Services search box to find and choose **IAM**.
-![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole1.png)
+![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole1.png?raw=true)
 2. Create a **new role**
-![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole2.png)
+![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole2.png?raw=true)
 3. Select **AWS service** and EC2
-![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole3.png)
+![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole3.png?raw=true)
 4. Search for **amazons3full** and select AmazonS3FullAccess
 5. Search for **amazondynamodb** and select AmazonDynamoDBFullAccess
-![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole5.png)
+![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole5.png?raw=true)
 6. Enter a name for the role and click **Create role**
-![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole6.png)
+![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole6.png?raw=true)
 7. We can see the new role created
-![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole7.png)
+![IAM Role Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/newRole7.png?raw=true)
 
-![IAM Policy structure](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/policy-structure.png)
+![IAM Policy structure](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/policy-structure.png?raw=true)
 
 ### Virtual Private Cloud (VPC)
 #### What is a VPC
@@ -218,13 +218,13 @@ An Amazon Machine Image (AMI) provides the information required to launch an ins
 - **Storage optimized:** Are designed for workloads that require high, sequential read and write access to very large data sets on local storage.
 
 #### Creating an EC2 instance and lunching a application
-![EC2 Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-1.png)
-![EC2 Step two](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-2.png)
-![EC2 Step three](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-3.png)
-![EC2 Step four](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-4.png)
-![EC2 Step five](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-5.png)
-![EC2 Step six](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-6.png)
-![EC2 Step seven](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-7.png)
+![EC2 Step one](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-1.png?raw=true)
+![EC2 Step two](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-2.png?raw=true)
+![EC2 Step three](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-3.png?raw=true)
+![EC2 Step four](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-4.png?raw=true)
+![EC2 Step five](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-5.png?raw=true)
+![EC2 Step six](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-6.png?raw=true)
+![EC2 Step seven](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-7.png?raw=true)
 Add the following code to the **User data** section and change the Region
 ```bash
 #!/bin/bash -ex
@@ -239,12 +239,12 @@ export AWS_DEFAULT_REGION=<INSERT REGION HERE>
 export DYNAMO_MODE=on
 FLASK_APP=application.py /usr/local/bin/flask run --host=0.0.0.0 --port=80
 ```
-![EC2 Step eight](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-8.png)
+![EC2 Step eight](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-8.png?raw=true)
 
 Successful application deployment, you can see the application running by clicking on the **instance id** link
 
-![EC2 Step nine](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-9.png)
-![EC2 Step ten](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-10.png)
+![EC2 Step nine](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-9.png?raw=true)
+![EC2 Step ten](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/EC2-10.png?raw=true)
 
 ### Amazon EC2 Instance Storage
 EC2 Instance Storage is a temporary block-level storage volume that is physically attached to the host computer for an EC2 instance. Instance storage is ideal for temporary storage of information that changes frequently, such as buffers, caches, scratch data, and other temporary content, or for data that is replicated across a fleet of instances, such as a load-balanced pool of web servers.
@@ -295,8 +295,8 @@ There are three types of Amazon RDS DB instances: **Standard, Memory Optimized, 
 
 ### Amazon DynamoDB
 Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale and it  It's a fully managed, multiregion, multimaster, durable database with built-in security, backup and restore, and in-memory caching for internet-scale applications. DynamoDB can handle more than 10 trillion requests per day and can support peaks of more than 20 million requests per second.
-![DynamoDB](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/week3database.png)
-![DynamoDB](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/week3database02.png)
+![DynamoDB](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/week3database.png?raw=true)
+![DynamoDB](https://github.com/kevincobos/AWS-Cloud-Solutions-Architect/blob/main/img/week3database02.png?raw=true)
 
 ### Amazon Neptune
 Amazon Neptune is a fast, reliable, fully managed graph database service that makes it easy to build and run applications that work with highly connected datasets. The core of Amazon Neptune is a purpose-built, high-performance graph database engine optimized for storing billions of relationships and querying the graph with milliseconds latency. Amazon Neptune supports popular graph models Property Graph and W3C's RDF, and their respective query languages Apache TinkerPop Gremlin and SPARQL, allowing you to easily build queries that efficiently navigate highly connected datasets. Neptune powers graph use cases such as recommendation engines, fraud detection, knowledge graphs, drug discovery, and network security.
@@ -326,6 +326,121 @@ Different databases are designed for different use cases. The following table su
 | Time series   | IoT applications, DevOps, industrial telemetry                                                 | Amazon Timestream                                              |
 | Ledger        | Systems of record, supply chain, registrations, banking transactions                           | Amazon QLDB                                                    |
 
+### Monitoring and Optimization
+#### Benefits of monitoring
+- **Cost optimization:** Monitoring your resources can help you identify opportunities to reduce your costs.
+- **Performance:** Monitoring your resources can help you identify opportunities to improve the performance of your applications.
+- **Security:** Monitoring your resources can help you identify potential security issues.
+- **Operational health:** Monitoring your resources can help you identify potential issues with your resources, fixing the problems before they impact your applications and users know about them.
+- **Make data-driven decisions:** Monitoring your resources can help you make data-driven decisions about your applications and infrastructure.
+
+#### Amazon CloudWatch
+Amazon CloudWatch is a monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers.  
+CloudWatch provides you with data and actionable insights to monitor your applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health.   
+CloudWatch collects monitoring and operational data in the form of logs, metrics, and events, providing you with a unified view of AWS resources, applications, and services that run on AWS and on-premises servers.   
+You can use CloudWatch to detect anomalous behavior in your environments, set alarms, visualize logs and metrics side by side, take automated actions, troubleshoot issues, and discover insights to keep your applications running smoothly. We can use CloudWatch to:
+- **Collect and track metrics:** CloudWatch collects metrics for your AWS resources, services, and applications, and you can visualize and analyze this data using CloudWatch dashboards so you can spot trends and patterns.
+- **Collect and monitor log files:** CloudWatch collects log data from your applications and services and lets you monitor and analyze this data in a centralized location.
+- **Set alarms:** CloudWatch alarms send notifications or automatically make changes to the resources you are monitoring based on rules that you define.
+- **Gain system-wide visibility:** CloudWatch dashboards enable you to create customizable views of the metrics and logs for your applications, resources, and services.
+- **Take automated actions:** CloudWatch enables you to automatically react to operational changes in your AWS resources. You can create rules that initiate corrective action in response to operational changes in your AWS resources.
+- **Troubleshoot issues:** CloudWatch enables you to search, filter, and analyze your logs so you can troubleshoot operational problems with your AWS resources and applications.
+- **Discover insights:** CloudWatch enables you to discover common sources of issues in your applications and infrastructure so you can take proactive steps to remediate problems before they occur.
+
+#### CloudWatch Dashboards
+CloudWatch dashboards are customizable home pages in the CloudWatch console that you can use to monitor your resources in a single view, even those resources that are spread across different Regions. You can use dashboards to display custom collections of metrics and alarms for your custom use case. You can use dashboards to create operational views of your resources and the alarms that act on them.
+
+#### CloudWatch Logs
+CloudWatch Logs enables you to monitor, store, and access your log files from EC2 instances, AWS CloudTrail, Route 53, and other sources. You can then retrieve the associated log data from CloudWatch Logs using the CloudWatch console, CloudWatch Logs commands in the AWS CLI, CloudWatch Logs API, or CloudWatch Logs SDK. 
+
+#### CloudWatch Logs Terminology
+- **Log events:** Represent a record of activity in your AWS resources. Log events are comprised of a timestamp, a message, and additional metadata that you can optionally add to the event, such as a log stream name.
+- **Log streams:** Represent a sequence of log events that share the same source. For example, you could have a log stream for a web server access log that contains all log events for a specific web server.
+- **Log groups:** Represent a group of log streams that share the same retention, monitoring, and access control settings. For example, you could group all of your web server access logs into a single log group so that you can more easily search and archive these log streams.
+
+#### CloudWatch Alarms
+CloudWatch alarms enable you to perform actions or send notifications based on metric values. When a CloudWatch alarm is triggered, it changes its state from OK to ALARM. When the metric value is back within the threshold, the alarm changes its state back to OK. You can configure CloudWatch alarms to send notifications or take actions when the alarm changes state. You can also configure CloudWatch alarms to take actions or send notifications when there is insufficient data to evaluate the alarm.
+There are three posible states for an alarm:
+- **OK:** The metric is within the defined threshold.
+- **ALARM:** The metric is outside of the defined threshold.
+- **INSUFFICIENT_DATA:** The alarm has just started, the metric is not available, or not enough data is available for the metric to determine the alarm state.
+
+#### CloudWatch Events
+CloudWatch Events delivers a near real-time stream of system events that describe changes in AWS resources. Using simple rules that you can quickly set up, you can match events and route them to one or more target functions or streams. CloudWatch Events becomes aware of operational changes as they occur. However, CloudWatch Events is designed to handle events that typically have a rapid rate of change. If you need to track and store events with a lower rate of change, consider using CloudTrail instead.
+
+### Route Traffic with Amazon Elastic Load Balancing
+Amazon Elastic Load Balancing (Amazon ELB) automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses, and Lambda functions. It can handle the varying load of your application traffic in a single Availability Zone or across multiple Availability Zones. Amazon ELB includes three types of load balancers: Application Load Balancers, Network Load Balancers, and Classic Load Balancers. You can select a load balancer based on your application needs. For example, use Application Load Balancers for content-based routing, Network Load Balancers for high-performance TCP/UDP traffic, and Classic Load Balancers for applications that were built within the EC2-Classic network.
+
+#### Features of Amazon ELB
+ELB provides the following features:
+- **High availability:** Amazon ELB automatically distributes incoming traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses, and Lambda functions, in multiple Availability Zones to help you achieve high availability.
+- **Automatic scaling:** Amazon ELB automatically scales its request handling capacity in response to incoming application traffic.
+- **Health checks:** Amazon ELB can detect the health of its registered targets and route traffic only to the healthy targets.
+- **Security features:** Amazon ELB supports the latest SSL/TLS ciphers and protocols to secure traffic at all layers, including the application layer. You can also use AWS WAF to create custom security rules that block common attack patterns, such as SQL injection or cross-site scripting.
+
+#### ELB COMPONENTS
+- **Listeners:** A listener checks for connection requests from clients, using the protocol and port that you configure, and forwards requests to one or more target groups, based on the rules that you define. Each rule specifies a target group, condition, and priority. When the condition for a rule is met, the traffic is forwarded to the target group that is associated with the rule. You must define a default rule for each listener, and you can add rules that specify different target groups based on the content of the request (also known as content-based routing).
+- **Target groups:** A target group routes requests to one or more registered targets, such as EC2 instances, using the protocol and port number that you specify. You can register a target with multiple target groups. You can configure health checks on a per target group basis. Health checks are performed on all targets registered to a target group that is specified in a listener rule for your load balancer.
+- **Rules** A rule defines the listener, priority, action, and conditions for routing requests to the target group. You must define a default rule for each listener, and you can add rules that specify different target groups based on the content of the request (also known as content-based routing). Rules are made of conditions and actions. When the conditions for a rule are met, the specified action is performed.
+
+#### Application Load Balancer
+An Application Load Balancer functions at the application layer, the seventh layer of the Open Systems Interconnection (OSI) model. After the load balancer receives a request, it evaluates the listener rules in priority order to determine which rule to apply, and then selects a target from the target group for the rule action using the round robin routing algorithm. Routing is performed independently for each target group, even when a target is registered with multiple target groups.
+
+#### Network Load Balancer
+A Network Load Balancer functions at the fourth layer of the Open Systems Interconnection (OSI) model. It can handle millions of requests per second. After the load balancer receives a connection request, it selects a target from the target group for the default rule using a flow hash routing algorithm. It attempts to open a TCP connection to the selected target on the port specified in the listener configuration. If the health check for the selected target is successful, the load balancer establishes the connection. Otherwise, it selects another target from the target group for the default rule and tries to establish a connection. The load balancer routes requests to targets using the least outstanding requests routing algorithm for the specified target group.
+
+#### Classic Load Balancer
+A Classic Load Balancer functions at both the request level and connection level. After the load balancer receives a connection request, it selects a target from the target group for the default rule using a flow hash routing algorithm. It attempts to open a TCP connection to the selected target on the port specified in the listener configuration. If the health check for the selected target is successful, the load balancer establishes the connection. Otherwise, it selects another target from the target group for the default rule and tries to establish a connection. The load balancer routes requests to targets using the least outstanding requests routing algorithm for the specified target group.
+
+| Feature                                                                                     | Application Load Balancer | Network Load Balancer |
+| ------------------------------------------------------------------------------------------- | ------------------------- | --------------------- |
+| Protocols                                                                                   | HTTP, HTTPS               | TCP, UDP, TLS         |
+| Connection draining (deregistration delay)                                                  | ✔                         |                       |
+| IP addresses as targets                                                                     | ✔                         | ✔                     |
+| Static IP and Elastic IP address                                                            |                           | ✔                     |
+| Preserve Source IP address                                                                  |                           | ✔                     |
+| Routing based on Source IP address, path, host, HTTP headers, HTTP method, and query string | ✔                         |                       |
+| Redirects                                                                                   | ✔                         |                       |
+| Fixed response                                                                              | ✔                         |                       |
+| User authentication                                                                         | ✔                         |                       |
+
+### AWS Reserved IPs 
+AWS reserve five IPs, so need to consider them when you are creating your Network Architecture
+
+![AWS Reserved IPs](./img/AWS_ReservedIPs.png)
+
+### Gateway 
+The Gate way is a service that allows you to connect to the internet, there are three types of gateways:
+- **Internet Gateway:** An internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between your VPC and the internet. It therefore imposes no availability risks or bandwidth constraints on your network traffic.
+- **Virtual Private Gateway:** A virtual private gateway is the VPN concentrator on the Amazon side of the VPN connection between your on-premises network and your VPC.
+- **NAT Gateway:** A NAT gateway is a highly available, managed Network Address Translation (NAT) service for your resources in a private subnet to access the internet.
+
+Virtual Private Gateway or VGW, a VGW attached to a VPC allow us to communicate with the on-premises network or to the internet using a VPN connection.
+
+### Amazon EC2 Auto Scaling
+Amazon EC2 Auto Scaling helps you maintain application availability and allows you to automatically add or remove EC2 instances according to conditions that you define. You can use EC2 Auto Scaling to help ensure that you are running your desired number of Amazon EC2 instances. EC2 Auto Scaling can also automatically increase the number of Amazon EC2 instances during demand spikes to maintain performance and decrease capacity during lulls to reduce costs. EC2 Auto Scaling is well suited both to applications that have stable demand patterns or that experience hourly, daily, or weekly variability in usage. 
+
+#### Benefits of EC2 Auto Scaling
+- **Better fault tolerance:** EC2 Auto Scaling can detect when an instance is unhealthy, terminate it, and launch an instance to replace it. You can also configure EC2 Auto Scaling to use multiple Availability Zones. If one Availability Zone becomes unavailable, EC2 Auto Scaling can launch instances in another one to compensate.
+- **Better availability:** EC2 Auto Scaling helps ensure that your application always has the right amount of capacity to handle the current traffic demand.
+- **Better cost management:** EC2 Auto Scaling can dynamically increase and decrease capacity as needed. Because you pay for the EC2 instances you use, you save money by launching instances when they are needed and terminating them when they aren't.
+- **Better performance:** EC2 Auto Scaling can help you maintain application performance during periods of demand spikes by automatically scaling your fleet up to meet the increase in demand. EC2 Auto Scaling can also help you maintain a predictable performance during periods of demand lulls by automatically scaling your fleet down to meet the decrease in demand.
+
+#### Vertical Scaling 
+Vertical scaling is the process of adding resources to increase the power of an existing server. Vertical scaling means that you scale by adding more power (CPU, RAM) to an existing machine. For example, your application runs on a server with 2 CPUs and 4GB of RAM. If you scale up this server to 4 CPUs and 8GB of RAM, you are scaling vertically.
+
+#### Horizontal Scaling
+Horizontal scaling is the process of adding more machines that function together as one unit. For example, your application runs on one server with 2 CPUs and 4GB of RAM. If you scale out your application to 10 servers, each with 2 CPUs and 4GB of RAM, you are scaling horizontally.
+
+#### Amazon EC2 Auto Scaling Components
+There are three main components of Amazon EC2 Auto Scaling:
+- **Launch template or configuration:** A launch template or configuration that contains configuration information to launch instances, such as the ID of the Amazon Machine Image (AMI), the instance type, key pairs, security groups, and network settings.
+- **EC2 Auto Scaling group:** A collection of EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management. An Auto Scaling group also enables you to use Amazon EC2 Auto Scaling features such as health check replacements and scaling policies.
+- **Auto Scaling policy:** A set of instructions for Amazon EC2 Auto Scaling to scale your Auto Scaling group. A scaling policy specifies whether to scale out or scale in your instances, by how much, and when scaling should occur.
+
+#### Launch Templates
+A launch template is a configuration template that an Auto Scaling group uses to launch EC2 instances. A launch template contains the parameters to launch an instance. When you use a launch template, you can specify instance properties that are the same for each instance launched using that template, such as the ID of the Amazon Machine Image (AMI), the instance type, key pairs, security groups, and network settings. You can also configure additional settings that are not specified in the launch template when you create an Auto Scaling group.
+
 ## Ramdom Notes
 - **Comand Line Interface (CLI)** Is a tool that allows you to interact with AWS services using commands in your command-line shell.
 - **(TOTP) algorithm** Time-based One-Time Password algorithm.
@@ -338,6 +453,8 @@ Different databases are designed for different use cases. The following table su
 - **Apache Tomcat** Is an open-source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and WebSocket technologies.
 - **Apache HTTP Web Server** Is a free and open-source cross-platform web server software. Apache is developed and maintained by an open community of developers under the auspices of the Apache Software Foundation.
 - **continuous integration/continuous delivery (CI/CD)** Is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early.
+- **IPV4 NOTATION** Internet Protocol version 4 (IPv4) is the fourth version of the Internet Protocol (IP). It is one of the core protocols of standards-based internetworking methods in the Internet and other packet-switched networks.
+- **CIDR NOTATION** Classless Inter-Domain Routing (CIDR) is a method for allocating IP addresses and routing Internet Protocol packets.
 - **Reserved Instances (RIs)** Is a billing discount that you can get by committing to prepaying for a certain amount of Amazon EC2 usage for a term of 1 or 3 years.
 - **Spot Instances** Is an Amazon EC2 pricing mechanism that lets you purchase spare Amazon EC2 computing capacity with no upfront commitment at discounted hourly rates.
 - **High-Performance Computing (HPC)** Is the use of parallel processing for running advanced application programs efficiently, reliably and quickly.
@@ -361,7 +478,9 @@ Different databases are designed for different use cases. The following table su
 - **ACID** In computer science, ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps.
 - **ACLs** Access control lists (ACLs) are a collection of permissions that apply to a file or directory.
 - **Ephemeral Storage** Is temporary storage that is available only during the lifetime of the instance that provides it.
-
+- **Application Load Balancer (ALB)** is a load balancer that operates at the application layer and allows you to define routing rules based on content across multiple services or containers running on one or more EC2 instances.
+- **Network Load Balancer (NLB)** is a load balancer that operates at the connection level (Layer 4), routing connections to targets - EC2 instances, containers, and IP addresses based on IP protocol data.
+- **Elastic Load Balancing (ELB)** is a load balancer that automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses, and Lambda functions.
 
 Working on my AWS Cloud Solutions Architect Professional Certificate
  
